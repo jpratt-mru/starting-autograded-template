@@ -208,7 +208,7 @@
     <rule ref="category/java/errorprone.xml/CloneThrowsCloneNotSupportedException"/>
     <rule ref="category/java/errorprone.xml/CloseResource">
       <properties>
-        <property name="allowedResourceTypes" value="java.util.Scanner" />
+        <property name="allowedResourceTypes" value="java.util.Scanner|java.io.InputStream" />
       </properties>
     </rule>
     <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals"/>
