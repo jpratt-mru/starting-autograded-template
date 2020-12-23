@@ -56,9 +56,9 @@ jobs:
       - name: Generate PMD report
         if: ${{ always() }}
         run: |
-          wget "https://github.com/pmd/pmd/releases/download/pmd_releases%2F6.26.0/pmd-bin-6.26.0.zip" -P /tmp
-          unzip /tmp/pmd-bin-6.26.0.zip -d /tmp
-          mv /tmp/pmd-bin-6.26.0 $HOME/pmd
+          wget "https://github.com/pmd/pmd/releases/download/pmd_releases%2F6.30.0/pmd-bin-6.30.0.zip" -P /tmp
+          unzip /tmp/pmd-bin-6.30.0.zip -d /tmp
+          mv /tmp/pmd-bin-6.30.0 $HOME/pmd
           chmod +x $HOME/pmd/bin/run.sh
           $HOME/pmd/bin/run.sh pmd -d ./src/main -R config/pmd/comp1501-pmd-rules.xml -f xml -r results/pmd-results.xml
 
