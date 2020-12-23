@@ -29,10 +29,10 @@ jobs:
       - name: Show env vars
         run: env
 
-      - name: Set up Java14, my good fellow
+      - name: Set up Java11, my good fellow
         uses: actions/setup-java@v1.4.3
         with:
-          java-version: 14
+          java-version: 11
 
       - name: Get standard test files and such
         run: |
