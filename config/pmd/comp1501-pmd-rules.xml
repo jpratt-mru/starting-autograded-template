@@ -211,7 +211,7 @@
         <property name="allowedResourceTypes" value="java.util.Scanner|java.io.InputStream" />
       </properties>
     </rule>
-    <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals"/>
+    <!-- <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals"/> -->
     <!-- <rule ref="category/java/errorprone.xml/ConstructorCallsOverridableMethod" /> -->
     <!-- <rule ref="category/java/errorprone.xml/DataflowAnomalyAnalysis" /> -->
     <!-- <rule ref="category/java/errorprone.xml/DetachedTestCase" /> -->
