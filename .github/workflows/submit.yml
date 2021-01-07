@@ -105,7 +105,7 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ github.event.inputs.MRU_username }}-${{env.REPO}}_${{env.NOW}}
+          name: ${{ github.event.inputs.MRU_username }}_${{env.REPO}}_${{env.NOW}}
           path: |
             reports/
             results/
