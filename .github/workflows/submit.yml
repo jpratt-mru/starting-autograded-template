@@ -23,8 +23,10 @@ jobs:
         run: |
           repo="${GITHUB_REPOSITORY//*\//}"
           nowish="$(TZ=America/Edmonton date +'%Y-%m-%dT%H-%M-%S')"
+          student="$(echo $repo | cut -d_ -f2| cut -c2-)"
           echo "REPO=$repo" >> $GITHUB_ENV
           echo "NOW=$nowish" >> $GITHUB_ENV
+          echo "STUDENT=$student" >> $GITHUB_ENV
 
       - name: Show env vars
         run: env
@@ -117,3 +119,4 @@ jobs:
           title: A summary report of your submission was created
           content-filepath: ./reports/summary-report.txt
           labels: report
+          assignees: ${{ env.STUDENT }}
